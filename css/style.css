@@ -1,1 +1,180 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body,html{width:100%;height:100%;overflow:hidden}body{background:#000010;font-family:Montserrat,sans-serif;color:#fff;line-height:1.3;-webkit-font-smoothing:antialiased}#particles{width:100%;height:100%;overflow:hidden}#intro{position:absolute;left:0;top:50%;padding:0 10px;width:100%;text-align:center}h2{text-transform:uppercase;font-size:50px;font-weight:120;color:#fff;letter-spacing:.05em}h1::after{content:'';width:80px;display:block;background:#fff;height:10px;margin:30px auto;line-height:1.1}p{margin:0 0 30px 0;font-size:24px;font-family:Roboto,sans-serif}@media only screen and (max-width:1000px){h1{font-size:15px}}@media only screen and (max-width:100px){h1{font-size:15px}h1::after{height:8px}}@media only screen and (max-width:100px){#intro{padding:0 10px}h1{font-size:15px}h1::after{height:6px}p{font-size:18px}.btn{font-size:16px}}@media only screen and (max-width:100px){h1{font-size:15px}h1::after{height:4px}}
+/* maris.popens.eu — hand-written, no dependencies */
+
+:root {
+  --bg: #fdfdfc;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #c0392b;
+  --rule: #e5e5e5;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --accent: #ff6b6b;
+    --rule: #21262d;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) 1.5rem 4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 3.5rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 1.5rem + 2vw, 2.75rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.identity {
+  margin: 0.6rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.intro {
+  margin: 0;
+  font-size: 1.05em;
+}
+
+.intro em {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.beyond p {
+  margin: 0;
+}
+
+/* Blog list */
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.posts li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-date {
+  flex: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.more {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* Links row */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 550;
+}
+
+/* Footer */
+footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--muted);
+}
+
+@media (max-width: 30rem) {
+  .posts li {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .post-date {
+    padding-top: 0;
+  }
+}

@@ -1,5 +1,10 @@
-./never
-./gonna
-./give
-./you
-./up
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
