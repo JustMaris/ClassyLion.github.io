@@ -6,8 +6,8 @@
   <title>Māris Popēns</title>
 
   <meta name="description" content="Māris Popēns — Senior Data Engineer in Tallinn, Estonia. Homelab tinkerer, Formula 1 follower, drum &amp; bass listener.">
-  <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#24273a" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://maris.popens.eu/">
 
   <meta property="og:type" content="website">
@@ -17,57 +17,60 @@
   <meta property="og:image" content="https://maris.popens.eu/assets/me.jpg">
 
   <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main>
-    <header class="hero">
-      <img class="avatar" src="assets/me.jpg" width="120" height="120"
-           alt="Māris Popēns" fetchpriority="high">
-      <h1>Māris Popēns</h1>
-      <p class="identity">Senior Data Engineer · Tallinn, Estonia 🇪🇪</p>
-      <p class="intro">
-        I build data platforms end to end — ingestion, warehousing, transformation,
-        orchestration and the BI layer on top — currently at
-        <a href="https://www.scoro.com/" target="_blank" rel="noopener">Scoro</a>.
-        <em>Challenge drives innovation.</em>
-      </p>
-    </header>
+    <p class="prompt"><span class="u">maris@tallinn</span><span class="d">:~$</span> whoami</p>
 
-    <section class="beyond">
-      <h2>Beyond the day job</h2>
+    <div class="id">
+      <img class="avatar" src="assets/me.jpg" width="60" height="60" alt="Māris Popēns" fetchpriority="high">
+      <div>
+        <h1>Māris Popēns</h1>
+        <p class="role">Senior Data Engineer · Tallinn, Estonia 🇪🇪</p>
+      </div>
+    </div>
+
+    <p class="lede">
+      I build data platforms end to end — ingestion, warehousing, transformation,
+      orchestration and the BI layer on top — currently at
+      <a href="https://www.scoro.com/" target="_blank" rel="noopener">Scoro</a>.
+    </p>
+    <p class="tagline"><span class="c">//</span> Challenge drives innovation<span class="cursor" aria-hidden="true"></span></p>
+
+    <section>
+      <h2>beyond the day job</h2>
       <p>
-        I run a homelab and self-host most of the things I use, follow Formula&nbsp;1
-        a little too closely, and have a soft spot for drum&nbsp;&amp;&nbsp;bass.
-        Side projects and homelab experiments live under
-        <a href="https://github.com/drumandbytes" target="_blank" rel="noopener">Drum&nbsp;and&nbsp;Bytes</a>.
+        I run a homelab and self-host most of what I use, follow Formula&nbsp;1 a
+        little too closely, and have a soft spot for drum&nbsp;&amp;&nbsp;bass. Side
+        projects live under
+        <a href="https://github.com/drumandbytes" target="_blank" rel="noopener">Drum and Bytes</a>.
       </p>
     </section>
 
-    <section class="blog">
-      <h2>From the blog</h2>
-      <ul class="posts">
+    <section>
+      <h2>writing · drumandbytes.com</h2>
+      <ul class="rows">
         <!-- BLOG-POSTS:START -->
         <!-- updated by .github/workflows/update-blog.yml -->
-        <li><a href="https://drumandbytes.com/on-admitting-and-accepting-failure/" target="_blank" rel="noopener">On admitting and accepting failure</a><span class="post-date">Mar 2026</span></li>
-        <li><a href="https://drumandbytes.com/what-is-ghost/" target="_blank" rel="noopener">How Ghost helped me build a self-hosted blog</a><span class="post-date">Jan 2026</span></li>
-        <li><a href="https://drumandbytes.com/what-i-am-using-to-host-this-blog/" target="_blank" rel="noopener">What I am using to host this blog</a><span class="post-date">Dec 2025</span></li>
-        <li><a href="https://drumandbytes.com/why-i-decided-to-make-a-self-hosted-blog/" target="_blank" rel="noopener">Why I decided to make a self-hosted blog</a><span class="post-date">Nov 2025</span></li>
+        <li><a href="https://drumandbytes.com/on-admitting-and-accepting-failure/" target="_blank" rel="noopener"><span class="k">2026-03</span><span class="v">On admitting and accepting failure</span></a></li>
+        <li><a href="https://drumandbytes.com/what-is-ghost/" target="_blank" rel="noopener"><span class="k">2026-01</span><span class="v">How Ghost helped me build a self-hosted blog</span></a></li>
+        <li><a href="https://drumandbytes.com/what-i-am-using-to-host-this-blog/" target="_blank" rel="noopener"><span class="k">2025-12</span><span class="v">What I am using to host this blog</span></a></li>
+        <li><a href="https://drumandbytes.com/why-i-decided-to-make-a-self-hosted-blog/" target="_blank" rel="noopener"><span class="k">2025-11</span><span class="v">Why I decided to make a self-hosted blog</span></a></li>
         <!-- BLOG-POSTS:END -->
       </ul>
-      <p class="more"><a href="https://drumandbytes.com/" target="_blank" rel="noopener">More at drumandbytes.com →</a></p>
+      <p class="more"><a href="https://drumandbytes.com/" target="_blank" rel="noopener">cd ~/blog →</a></p>
     </section>
 
-    <nav class="links">
-      <a href="https://github.com/JustMaris" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://drumandbytes.com/" target="_blank" rel="noopener">Blog</a>
-      <a href="https://www.linkedin.com/in/marispopens/" target="_blank" rel="noopener">LinkedIn</a>
-    </nav>
+    <section>
+      <h2>links</h2>
+      <p class="links"><a href="https://github.com/JustMaris" target="_blank" rel="noopener">github</a><span class="sep">·</span><a href="https://drumandbytes.com/" target="_blank" rel="noopener">blog</a><span class="sep">·</span><a href="https://www.linkedin.com/in/marispopens/" target="_blank" rel="noopener">linkedin</a></p>
+    </section>
 
-    <footer>
-      <p>Built plain — HTML and CSS, no trackers. <a href="https://github.com/JustMaris/JustMaris.github.io" target="_blank" rel="noopener">Source</a>.</p>
-    </footer>
+    <footer>built plain — html + css, no trackers · <a href="https://github.com/JustMaris/JustMaris.github.io" target="_blank" rel="noopener">source</a></footer>
   </main>
 </body>
 </html>

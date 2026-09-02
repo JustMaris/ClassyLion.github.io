@@ -2,8 +2,10 @@
 
 Source for **[maris.popens.eu](https://maris.popens.eu/)** — my personal landing page.
 
-A single hand-written `index.html` + `css/style.css`. No build step, no JavaScript,
-no trackers. Light and dark themes follow the system preference.
+A single hand-written `index.html` + `css/style.css`, styled as a terminal with the
+[Catppuccin](https://catppuccin.com/) palette — Latte in light, Macchiato in dark,
+following the system preference. No build step, no JavaScript, no third-party
+requests: IBM Plex Mono/Sans are self-hosted as woff2 subsets in `assets/fonts/`.
 
 ## Deploy
 
