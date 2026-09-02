@@ -55,12 +55,12 @@ def build_blog_block() -> str:
         try:
             # RSS pubDate is an RFC 2822 date; parsedate_to_datetime returns
             # a timezone-aware datetime.
-            stamp = f"{parsedate_to_datetime(pub):%b %Y}"
+            stamp = f"{parsedate_to_datetime(pub):%Y-%m}"
         except (TypeError, ValueError):
             stamp = ""
         lines.append(
-            '        <li><a href="{link}" target="_blank" rel="noopener">{title}</a>'
-            '<span class="post-date">{stamp}</span></li>'.format(
+            '        <li><a href="{link}" target="_blank" rel="noopener">'
+            '<span class="k">{stamp}</span><span class="v">{title}</span></a></li>'.format(
                 link=html.escape(link, quote=True),
                 title=html.escape(title),
                 stamp=html.escape(stamp),
